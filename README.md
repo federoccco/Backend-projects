@@ -24,7 +24,7 @@ Creo un file di testo con tutti i packages installati e le relative versioni<br>
 </code><br><br>
 
 
-Creo il file main.py e copio il boilerplate della doc<br>
+Creo il file main.py e copio il boilerplate della doc
 <code>
 
     from fastapi import FastAPI
@@ -36,7 +36,7 @@ Creo il file main.py e copio il boilerplate della doc<br>
     async def root():
         return {"message": "Hello World"}
 
-</code><br>
+</code>
 Torno nel terminale e attivo il server <br>
 <code> 
 (venv) PS \<path> uvicorn main:app --reload
