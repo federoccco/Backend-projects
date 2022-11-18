@@ -13,16 +13,17 @@ Mi son spostato nella cartella e ho attivato l'ambiente
 <br>
 Ora che l'ambiente è attivo, posso installare i packages che mi serviranno per il progetto <br>
 <code>
-    \<path/venv> pip3 install "fastapi[all]"<br>
+    \<path/venv> pip3 install "fastapi[all]"
 </code>
+<br>
 Torno indietro nella cartella di progetto
 <br>
 <code>
     \<path/venv> cd ../ 
 </code>
 <br>
-Creo il file main.py
-e copio il boilerplate della doc
+Creo il file main.py e copio il boilerplate della doc
+<br>
 <code>
     
     from fastapi import FastAPI
@@ -37,8 +38,10 @@ e copio il boilerplate della doc
 </code>
 Torno nel terminale e attivo il server
 <br>
-<code>
-    uvicorn main:app --reload
+<code> 
+    
+    <path> uvicorn main:app --reload
+
 </code>
 <br>
 Ora andando all'indirizzo <a href="http://127.0.0.1:8000"> http://127.0.0.1:8000</a> sarà possibile vedere il return della funzione root 
@@ -74,6 +77,6 @@ Creo infine un file .gitignore dove aggiungo i files che non voglio nel commit
     __pycache__
     venv
     .DS_Store
-    
+
 </code>
 
