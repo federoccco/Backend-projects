@@ -1,7 +1,8 @@
 Prima di procedere con il progetto ho creato un ambiente virtuale tramite powershell
 <br>
 <code> 
-    \<path> python -m venv venv
+    
+    <path> python -m venv venv
 </code>
 <br>
 Mi son spostato nella cartella e ho attivato l'ambiente 
@@ -14,13 +15,15 @@ Mi son spostato nella cartella e ho attivato l'ambiente
 <br>
 Ora che l'ambiente è attivo, posso installare i packages che mi serviranno per il progetto <br>
 <code>
-    \<path/venv> pip3 install "fastapi[all]"
+    
+    <path/venv> pip3 install "fastapi[all]"
 </code>
 <br>
 Torno indietro nella cartella di progetto
 <br>
 <code>
-    \<path/venv> cd ../ 
+    
+    <path/venv> cd ../ 
 </code>
 <br>
 Creo il file main.py e copio il boilerplate della doc
