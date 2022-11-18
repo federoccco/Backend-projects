@@ -47,17 +47,21 @@ Cambio la funzione root per dare una sorta di Homepage
 
     @app.get('/')
     def root():
-        return '''Benvenuto nella calcolatrice più inutile e inefficiente del web, per sapere la somma di due numeri digita nella barra dell'URL: <Home page URL>/num1/num2'''
+        return '''Benvenuto nella calcolatrice più inutile e inefficiente del web, per sapere la somma di due numeri digita nella barra dell'URL: <root URL>/sum/num1/num2'''
+
 </code>
 E finalmente posso creare la mia funzione per avere la somma di due numeri
 <code>
 
-    @app.get('/{num1}/{num2}')
+    @app.get('/sum/{num1}/{num2}')
     def sum(num1 : int, num2 : int):
+    '''restituisce a schermo la somma di due numeri inseriti in un url di tipo root/sum/num1/num2'''
+
         return num1 + num2
+
 </code>
 Ho creato una funzione sum che prevede l'utilizzo di due parametri di tipo int e come return la loro somma
-<code>@app.get('/{num1}/{num2}')</code> è il decoratore della funzione che definisce l'url che prende i due numeri passati come input e li utilizza all'interno della funzione<br><br>
+<code>@app.get('/sum/{num1}/{num2}')</code> è il decoratore della funzione che definisce l'url che prende i due numeri passati come input e li utilizza all'interno della funzione<br><br>
 Creo infine un file .gitignore dove aggiungo i files che non voglio includere nel commit
 <code>
 
