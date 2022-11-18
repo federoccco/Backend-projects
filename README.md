@@ -7,9 +7,9 @@ Prima di procedere con il progetto ho creato un ambiente virtuale tramite powers
 Mi son spostato nella cartella e ho attivato l'ambiente 
 <br>
 <code>
-    \<path> cd venv
-    <br>
-    \<path/venv> ./Scripts/Activate.ps1
+    
+    <path> cd venv
+    <path/venv> ./Scripts/Activate.ps1
 </code>
 <br>
 Ora che l'ambiente è attivo, posso installare i packages che mi serviranno per il progetto <br>
