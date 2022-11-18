@@ -35,8 +35,9 @@ Creo il file main.py e copio il boilerplate della doc
     @app.get("/")
     async def root():
         return {"message": "Hello World"}
-</code>
-Torno nel terminale e attivo il server <br>
+</code><br>
+Torno nel terminale e attivo il server
+<br>
 <code> 
 (venv) PS \<path> uvicorn main:app --reload
 </code><br><br>
@@ -48,7 +49,6 @@ Cambio la funzione root per dare una sorta di Homepage
     @app.get('/')
     def root():
         return '''Benvenuto nella calcolatrice più inutile e inefficiente del web, per sapere la somma di due numeri digita nella barra dell'URL: <root URL>/sum/num1/num2'''
-
 </code>
 E finalmente posso creare la mia funzione per avere la somma di due numeri
 <code>
