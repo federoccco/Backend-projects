@@ -1,6 +1,6 @@
 Prima di procedere con il progetto creo un ambiente virtuale tramite powershell<br>
 <code> 
-<path> python -m venv venv
+PS \<path> python -m venv venv
 </code><br><br>
 Mi sposto nella cartella e attivo l'ambiente <br>
 <code>
