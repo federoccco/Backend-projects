@@ -25,6 +25,7 @@ Creo un file di testo con tutti i packages installati e le relative versioni<br>
 
 
 Creo il file main.py e copio il boilerplate della doc
+
 <code>
 
     from fastapi import FastAPI
@@ -34,8 +35,9 @@ Creo il file main.py e copio il boilerplate della doc
 
     @app.get("/")
     async def root():
-        return {"message": "Hello World"}
-</code><br>
+        return {"message": "Hello World"} 
+</code>
+
 Torno nel terminale e attivo il server
 <br>
 <code> 
@@ -50,7 +52,9 @@ Cambio la funzione root per dare una sorta di Homepage
     def root():
         return '''Benvenuto nella calcolatrice più inutile e inefficiente del web, per sapere la somma di due numeri digita nella barra dell'URL: <root URL>/sum/num1/num2'''
 </code>
+
 E finalmente posso creare la mia funzione per avere la somma di due numeri
+
 <code>
 
     @app.get('/sum/{num1}/{num2}')
@@ -60,7 +64,9 @@ E finalmente posso creare la mia funzione per avere la somma di due numeri
         return num1 + num2
 
 </code>
+
 Ho creato una funzione sum che prevede l'utilizzo di due parametri di tipo int e come return la loro somma
+
 <code>@app.get('/sum/{num1}/{num2}')</code> è il decoratore della funzione che definisce l'url che prende i due numeri passati come input e li utilizza all'interno della funzione<br><br>
 Creo infine un file .gitignore dove aggiungo i files che non voglio includere nel commit
 <code>
