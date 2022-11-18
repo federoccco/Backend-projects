@@ -1,33 +1,25 @@
-Prima di procedere con il progetto ho creato un ambiente virtuale tramite powershell
-<br>
+Prima di procedere con il progetto ho creato un ambiente virtuale tramite powershell<br>
 <code> 
     
     <path> python -m venv venv
-</code>
-<br>
-Mi son spostato nella cartella e ho attivato l'ambiente 
-<br>
+</code><br>
+Mi son spostato nella cartella e ho attivato l'ambiente <br>
 <code>
     
     <path> cd venv
     <path/venv> ./Scripts/Activate.ps1
-</code>
-<br>
+</code><br>
 Ora che l'ambiente è attivo, posso installare i packages che mi serviranno per il progetto <br>
 <code>
     
     <path/venv> pip3 install "fastapi[all]"
-</code>
-<br>
-Torno indietro nella cartella di progetto
-<br>
+</code><br>
+Torno indietro nella cartella di progetto<br>
 <code>
     
     <path/venv> cd ../ 
-</code>
-<br>
-Creo il file main.py e copio il boilerplate della doc
-<br>
+</code><br>
+Creo il file main.py e copio il boilerplate della doc<br>
 <code>
     
     from fastapi import FastAPI
@@ -40,19 +32,14 @@ Creo il file main.py e copio il boilerplate della doc
         return {"message": "Hello World"}
 
 </code>
-Torno nel terminale e attivo il server
-<br>
+Torno nel terminale e attivo il server<br>
 <code> 
     
     <path> uvicorn main:app --reload
 
-</code>
-<br>
-Ora andando all'indirizzo <a href="http://127.0.0.1:8000"> http://127.0.0.1:8000</a> sarà possibile vedere il return della funzione root 
-<br>
-Ora che il server è attivo, modifico il file main.py
-<br>
-<br>
+</code><br>
+Ora andando all'indirizzo <a href="http://127.0.0.1:8000"> http://127.0.0.1:8000</a> sarà possibile vedere il return della funzione root <br>
+Ora che il server è attivo, modifico il file main.py<br><br>
 Cambio la funzione root per dare una sorta di Homepage
 <code>
 
@@ -61,8 +48,7 @@ Cambio la funzione root per dare una sorta di Homepage
         return '''Benvenuto nella calcolatrice più inutile e inefficiente del web, per sapere la somma di due numeri digita nella barra dell'URL: <Home page URL>/num1/num2'''
 
 
-</code>
-<br>
+</code><br>
 E finalmente posso creare la mia funzione per avere la somma di due numeri
 <code>
 
@@ -72,9 +58,7 @@ E finalmente posso creare la mia funzione per avere la somma di due numeri
 
 </code>
 Ho creato una funzione sum che prevede l'utilizzo di due parametri di tipo int e come return la loro somma <br>
-<code>@app.get('/{num1}/{num2}')</code> è il decoratore della funzione che definisce l'url che prende i due numeri passati come input e li utilizza all'interno della funzione
-<br>
-<br>
+<code>@app.get('/{num1}/{num2}')</code> è il decoratore della funzione che definisce l'url che prende i due numeri passati come input e li utilizza all'interno della funzione<br><br>
 Creo infine un file .gitignore dove aggiungo i files che non voglio nel commit
 <code>
     
